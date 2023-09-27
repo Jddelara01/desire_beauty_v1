@@ -6,6 +6,16 @@
 <div class="container header-container">
     <div class="row">
         <div class="col">
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container mb-2">
+    <div class="row">
+        <div class="col">
             <hr>
             <h2 class="logo-font mb-4">Shopping Cart</h2>
             <hr>
@@ -102,7 +112,7 @@
                                 </span>
                                 <span class="text-uppercase">Keep Shopping</span>
                             </a>
-                            <a href="" class="btn btn-black rounded-0 btn-lg">
+                            <a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-lg">
                                 <span class="text-uppercase">Secure Checkout</span>
                                 <span class="icon">
                                     <i class="fas fa-lock"></i>
@@ -123,17 +133,7 @@
             {% endif %}
         </div>
     </div>
-</div>
-{% endblock %}
 
-{% block content %}
-<div class="overlay"></div>
-<div class="container mb-2">
-    <div class="row">
-        <div class="col">
-
-        </div>
-    </div>
 </div>
 {% endblock %}
 
